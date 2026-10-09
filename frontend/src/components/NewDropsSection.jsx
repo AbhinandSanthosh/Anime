@@ -1,7 +1,7 @@
 import { useMemo, useState } from "react";
 import { ArrowRight, Heart, ShoppingBag } from "lucide-react";
 
-import useProducts from "../hooks/useProducts";
+import useProducts from "../hooks/Useproducts";
 import { useCart } from "../context/CartContext";
 import NavLink from "./NavLink";
 const PLACEHOLDER = "/products/placeholder.png";

@@ -1,6 +1,6 @@
 import { ArrowRight, Play } from "lucide-react";
 import moonImage from "../assets/moon-anime.png";
-import useProducts from "../hooks/useProducts";
+import useProducts from "../hooks/Useproducts";
 import NavLink from "./NavLink";
 
 const Hero = ({ onNavigate }) => {

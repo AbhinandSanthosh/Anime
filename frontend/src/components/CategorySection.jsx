@@ -1,7 +1,7 @@
 import { useMemo } from "react";
 import { ArrowRight } from "lucide-react";
 
-import useProducts from "../hooks/useProducts";
+import useProducts from "../hooks/Useproducts";
 import NavLink from "./NavLink";
 
 const PLACEHOLDER = "/products/placeholder.png";
