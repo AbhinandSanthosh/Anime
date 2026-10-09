@@ -1,0 +1,71 @@
+/* src/index.css */
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap");
+
+@import "tailwindcss";
+
+:root {
+  font-family: "Inter", sans-serif;
+  background: #08070d;
+  color: white;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: #08070d;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  background: #08070d;
+}
+
+button,
+a,
+input,
+select {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+/* Page width and side margins for the home page sections */
+.section-shell {
+  width: 100%;
+  max-width: 1440px;
+  margin-inline: auto;
+  padding-inline: 1.25rem;
+}
+
+@media (min-width: 640px) {
+  .section-shell {
+    padding-inline: 2rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .section-shell {
+    padding-inline: 2.5rem;
+  }
+}
+
+/* Dark is the base design. Light mode inverts the page, then flips photos back. */
+html[data-theme="light"] {
+  filter: invert(1) hue-rotate(180deg);
+}
+
+html[data-theme="light"] :is(img, video, canvas) {
+  filter: invert(1) hue-rotate(180deg);
+}
